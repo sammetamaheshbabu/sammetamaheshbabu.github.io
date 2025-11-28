@@ -72,8 +72,36 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
-    <!-- Favicon -->
+    <!-- Favicons: ICO fallback, PNGs for modern devices, Apple touch, Safari mask, MS tile, and web manifest -->
     <link rel="icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/TOOR_INDIA_LOGO.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/TOOR_INDIA_LOGO.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/TOOR_INDIA_LOGO.png"
+    />
+    <link
+      rel="mask-icon"
+      href="./assets/img/TOOR_INDIA_LOGO.png"
+      color="#0b0b0b"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/img/TOOR_INDIA_LOGO.png"
+    />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -86,7 +114,7 @@
           <img
             src="./assets/img/TOOR_INDIA_LOGO_1.png"
             alt="ToorIndia Logo"
-            height="40"
+            height="25  "
             class="me-2"
             decoding="async"
           />
@@ -137,45 +165,109 @@
 
     <!-- Hero Section -->
     <main id="main">
-      <header
-        class="hero position-relative text-white d-flex align-items-center"
-      >
-        <div class="container py-5">
-          <div class="row align-items-center">
-            <div class="col-lg-7">
-              <h1 class="display-5 fw-bold">
-                Discover India with curated experiences
-              </h1>
-              <p class="lead mt-3">
-                Handpicked itineraries, expert tour managers, and seamless
-                planning—crafted for solo, family, and group travellers.
-              </p>
-              <div class="mt-4 d-flex gap-2">
-                <a href="#packages" class="btn btn-primary btn-lg"
-                  >Explore Packages</a
-                >
-                <a
-                  href="https://wa.me/919676003945?text=Hi%2C%20I%27m%20interested%20in%20booking%205D%2F6N%20Manali%20trip."
-                  class="btn btn-outline-light btn-lg"
-                  target="_blank"
-                  rel="noopener"
-                  >Book on WhatsApp</a
-                >
+      <!-- Carousel Hero (static-friendly for GitHub Pages) -->
+            <!-- Carousel Hero (static-friendly for GitHub Pages) -->
+      <section id="hero-carousel" class="mb-5">
+        <div id="carouselHero" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <picture>
+                <img src="./assets/img/Main_Slider/Chasing Clouds , Finding Peace=Discover misty hills, hidden waterfalls, and lush green trails this monsoon.jpg" class="d-block w-100" alt="Chasing Clouds , Finding Peace" loading="lazy" decoding="async">
+              </picture>
+              <div class="carousel-caption d-md-block text-start p-3" style="max-width: 640px; left: 5%; right: auto">
+                <h2 class="display-6 fw-bold">Chasing Clouds , Finding Peace</h2>
+                <p class="lead">Discover misty hills, hidden waterfalls, and lush green trails this monsoon</p>
+                <p class="mt-3">
+                  <a href="#packages" class="btn btn-primary btn-lg me-2">Explore Packages</a>
+                  <a href="https://wa.me/919676003945?text=Hi%2c+I%27m+interested+in+Chasing+Clouds+%2c+Finding+Peace" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">Book on WhatsApp</a>
+                </p>
               </div>
             </div>
-            <div class="col-lg-5 d-none d-lg-block">
-              <div class="hero-card p-3 rounded-4 bg-white text-dark shadow">
-                <img
-                  src="./assets/img/Main_Slider/nature_1=Monsoon Diaries Await You=Escape routine and dive into unforgettable rainy escapes.jpg"
-                  class="img-fluid rounded-3"
-                  alt="Top Package"
-                />
+            <div class="carousel-item ">
+              <picture>
+                <img src="./assets/img/Main_Slider/Drenched in Beauty, Wrapped in Nature=Experience the magic of rains across valleys, forts, and forests.jpg" class="d-block w-100" alt="Drenched in Beauty, Wrapped in Nature" loading="lazy" decoding="async">
+              </picture>
+              <div class="carousel-caption d-md-block text-start p-3" style="max-width: 640px; left: 5%; right: auto">
+                <h2 class="display-6 fw-bold">Drenched in Beauty, Wrapped in Nature</h2>
+                <p class="lead">Experience the magic of rains across valleys, forts, and forests</p>
+                <p class="mt-3">
+                  <a href="#packages" class="btn btn-primary btn-lg me-2">Explore Packages</a>
+                  <a href="https://wa.me/919676003945?text=Hi%2c+I%27m+interested+in+Drenched+in+Beauty%2c+Wrapped+in+Nature" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">Book on WhatsApp</a>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <picture>
+                <img src="./assets/img/Main_Slider/Monsoon Diaries Await You=Escape routine and dive into unforgettable rainy escapes.jpg" class="d-block w-100" alt="Monsoon Diaries Await You" loading="lazy" decoding="async">
+              </picture>
+              <div class="carousel-caption d-md-block text-start p-3" style="max-width: 640px; left: 5%; right: auto">
+                <h2 class="display-6 fw-bold">Monsoon Diaries Await You</h2>
+                <p class="lead">Escape routine and dive into unforgettable rainy escapes</p>
+                <p class="mt-3">
+                  <a href="#packages" class="btn btn-primary btn-lg me-2">Explore Packages</a>
+                  <a href="https://wa.me/919676003945?text=Hi%2c+I%27m+interested+in+Monsoon+Diaries+Await+You" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">Book on WhatsApp</a>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <picture>
+                <img src="./assets/img/Main_Slider/Travel with the Rhythm of Rain=Scenic drives, vibrant landscapes, and soulful journeys this season.jpg" class="d-block w-100" alt="Travel with the Rhythm of Rain" loading="lazy" decoding="async">
+              </picture>
+              <div class="carousel-caption d-md-block text-start p-3" style="max-width: 640px; left: 5%; right: auto">
+                <h2 class="display-6 fw-bold">Travel with the Rhythm of Rain</h2>
+                <p class="lead">Scenic drives, vibrant landscapes, and soulful journeys this season</p>
+                <p class="mt-3">
+                  <a href="#packages" class="btn btn-primary btn-lg me-2">Explore Packages</a>
+                  <a href="https://wa.me/919676003945?text=Hi%2c+I%27m+interested+in+Travel+with+the+Rhythm+of+Rain" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">Book on WhatsApp</a>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <picture>
+                <img src="./assets/img/Main_Slider/Where Raindrops Meet Adventure=Trek, explore, and embrace the thrill of monsoon getaways.webp" class="d-block w-100" alt="Where Raindrops Meet Adventure" loading="lazy" decoding="async">
+              </picture>
+              <div class="carousel-caption d-md-block text-start p-3" style="max-width: 640px; left: 5%; right: auto">
+                <h2 class="display-6 fw-bold">Where Raindrops Meet Adventure</h2>
+                <p class="lead">Trek, explore, and embrace the thrill of monsoon getaways</p>
+                <p class="mt-3">
+                  <a href="#packages" class="btn btn-primary btn-lg me-2">Explore Packages</a>
+                  <a href="https://wa.me/919676003945?text=Hi%2c+I%27m+interested+in+Where+Raindrops+Meet+Adventure" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">Book on WhatsApp</a>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <picture>
+                <img src="./assets/img/Main_Slider/Women-Only Special Tours =Everything is within your power, and your power is within you.webp" class="d-block w-100" alt="Women-Only Special Tours" loading="lazy" decoding="async">
+              </picture>
+              <div class="carousel-caption d-md-block text-start p-3" style="max-width: 640px; left: 5%; right: auto">
+                <h2 class="display-6 fw-bold">Women-Only Special Tours</h2>
+                <p class="lead">Everything is within your power, and your power is within you</p>
+                <p class="mt-3">
+                  <a href="#packages" class="btn btn-primary btn-lg me-2">Explore Packages</a>
+                  <a href="https://wa.me/919676003945?text=Hi%2c+I%27m+interested+in+Women-Only+Special+Tours" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">Book on WhatsApp</a>
+                </p>
               </div>
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="hero-overlay"></div>
-      </header>
+      </section>
+
 
       <!-- Top Packages -->
       <section class="py-5" id="packages">
@@ -555,3 +647,4 @@
     ></script>
   </body>
 </html>
+
