@@ -1,0 +1,169 @@
+:root {
+  --brand-primary: #0d6efd; /* Bootstrap primary fallback */
+  --bg: #ffffff;
+  --text: #1c1c1c;
+  --muted: #6c757d;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.05);
+  --section-alt: #f8f9fa; /* light gray */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0b0b;
+    --text: #e9ecef;
+    --muted: #adb5bd;
+    --card-bg: #141414;
+    --card-border: rgba(255, 255, 255, 0.08);
+    --section-alt: #0f0f0f;
+  }
+}
+
+/* Explicit theme override via data-theme attribute */
+html[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #1c1c1c;
+  --muted: #6c757d;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.05);
+  --section-alt: #f8f9fa;
+}
+html[data-theme="dark"] {
+  --bg: #0b0b0b;
+  --text: #e9ecef;
+  --muted: #adb5bd;
+  --card-bg: #141414;
+  --card-border: rgba(255, 255, 255, 0.08);
+  --section-alt: #0f0f0f;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Accessibility: skip link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  padding: 8px 12px;
+  background: var(--brand-primary);
+  color: #fff;
+  border-radius: 8px;
+  z-index: 2000;
+}
+
+.navbar-brand span {
+  letter-spacing: 0.3px;
+}
+
+.hero {
+  min-height: 64vh;
+  background: url("./../img/hero-bg.jpg") center/cover no-repeat,
+    linear-gradient(120deg, rgba(13, 110, 253, 0.2), rgba(13, 110, 253, 0.05));
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15));
+}
+.hero .display-5 {
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+}
+.hero-card {
+  border: 1px solid var(--card-border);
+}
+
+.card img {
+  object-fit: cover;
+  max-height: 220px;
+  aspect-ratio: 4 / 3;
+}
+
+.whatsapp-fab {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1050;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #25d366;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.whatsapp-fab img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+.whatsapp-fab:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+}
+
+footer a {
+  color: inherit;
+  opacity: 0.85;
+}
+footer a:hover {
+  opacity: 1;
+}
+
+/* Dark mode overrides for Bootstrap utility backgrounds */
+.bg-white {
+  background-color: var(--card-bg) !important;
+}
+.bg-light {
+  background-color: var(--section-alt) !important;
+}
+.text-muted {
+  color: var(--muted) !important;
+}
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+.border-top {
+  border-top-color: var(--card-border) !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--text);
+}
+.navbar-light .navbar-brand {
+  color: var(--text);
+}
+.btn-primary {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+.btn-outline-light {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Ensure images do not invert in dark mode */
+img {
+  color: transparent;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+  .hero {
+    min-height: 56vh;
+  }
+}

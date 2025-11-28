@@ -1,0 +1,10 @@
+# Stage all changes
+git add -A
+
+# Commit with a clear message
+git commit -m "Update site content and fixes"
+
+# Push to the same repo (main branch assumed)
+git push origin main
+# If your default branch is master, use:
+# git push origin master
