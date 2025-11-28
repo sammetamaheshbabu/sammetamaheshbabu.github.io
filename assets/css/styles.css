@@ -167,3 +167,84 @@ img {
     min-height: 56vh;
   }
 }
+
+/* Carousel hero tweaks (general - desktop & mobile baseline) */
+.carousel-caption {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25));
+  border-radius: 12px;
+  padding: 18px;
+}
+.carousel-caption h2,
+.carousel-caption p {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Desktop image sizing (default) */
+.carousel-item img {
+  object-fit: cover;
+  height: 60vh;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 767.98px) {
+  /* slightly reduce image height to avoid heavy cropping */
+  .carousel-item img {
+    height: 40vh;
+  }
+
+  /* overlay caption at the bottom with tighter padding */
+    .carousel-caption { 
+      position: absolute; 
+      left: 8px; 
+      right: 8px; 
+      bottom: 12px; 
+      /* reduced opacity so background is more visible */ 
+      background: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.25)); 
+      margin: 0; 
+      padding: 8px; 
+      border-radius: 8px; 
+      max-width: calc(100% - 16px); 
+    }
+
+  .carousel-caption h2 {
+      font-size: 0.9rem;
+    margin: 0 0 6px;
+  }
+  .carousel-caption p {
+      font-size: 0.8rem;
+    margin: 0 0 8px;
+  }
+
+  /* Stack CTA buttons vertically so they are finger-friendly */
+  .carousel-caption .btn {
+      display: block; 
+      width: 100%; 
+      margin-bottom: 6px; 
+      padding: 0.45rem 0.6rem; 
+      font-size: 0.88rem; 
+  }
+  .carousel-caption .btn:last-child {
+    margin-bottom: 0;
+  }
+
+  /* keep indicators visible above the caption */
+  .carousel-indicators {
+    bottom: 86px;
+  }
+
+  /* very small devices - tweak font sizes and image height */
+  @media (max-width: 420px) {
+    .carousel-item img {
+      height: 34vh;
+    }
+    .carousel-caption h2 {
+      font-size: 1rem;
+    }
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+    .carousel-indicators {
+      bottom: 76px;
+    }
+  }
+}

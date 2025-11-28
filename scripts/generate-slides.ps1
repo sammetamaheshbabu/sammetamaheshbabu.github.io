@@ -140,8 +140,8 @@ foreach ($s in $slides) {
     $itemBuilder.AppendLine('                <h2 class="display-6 fw-bold">' + $mainEsc + '</h2>') | Out-Null
     if ($s.Sub -ne '') { $itemBuilder.AppendLine('                <p class="lead">' + $subEsc + '</p>') | Out-Null }
     $waText = [System.Web.HttpUtility]::UrlEncode("Hi, I'm interested in $($s.Main)")
+    # Only include WhatsApp CTA as requested
     $itemBuilder.AppendLine('                <p class="mt-3">') | Out-Null
-    $itemBuilder.AppendLine('                  <a href="#packages" class="btn btn-primary btn-lg me-2">Explore Packages</a>') | Out-Null
     $itemBuilder.AppendLine('                  <a href="https://wa.me/919676003945?text=' + $waText + '" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">Book on WhatsApp</a>') | Out-Null
     $itemBuilder.AppendLine('                </p>') | Out-Null
     $itemBuilder.AppendLine('              </div>') | Out-Null
