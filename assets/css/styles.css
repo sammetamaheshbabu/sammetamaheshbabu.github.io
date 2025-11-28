@@ -19,6 +19,42 @@
   }
 }
 
+/* Desktop: place caption on the right and align CTAs to the right while keeping mobile behaviour intact */
+@media (min-width: 768px) {
+  /* override inline left/right positioning set in markup */
+  .carousel-caption {
+    left: auto !important;
+    right: 30% !important;
+    text-align: center !important; /* align heading/paragraph/button to the right */
+    max-width: 640px; /* match the inline max-width used in the markup */
+  }
+
+  /* Keep the CTA as an inline-block on desktop so it sits to the right instead of full width */
+  .carousel-caption .btn {
+    display: inline-block !important;
+    width: auto !important;
+  }
+
+  /* Slightly reduce headline width to avoid overflow when right aligned */
+  .carousel-caption h2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Optional: if you want the caption and CTA centered on desktop,
+      add class `cta-center` to the <body> element. This leaves the default
+       right-aligned behaviour unchanged. */
+  body.cta-center .carousel-caption {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    text-align: center !important;
+  }
+  body.cta-center .carousel-caption .btn {
+    display: inline-block !important;
+  }
+}
+
 /* Explicit theme override via data-theme attribute */
 html[data-theme="light"] {
   --bg: #ffffff;
@@ -42,6 +78,120 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji";
   background-color: var(--bg);
   color: var(--text);
+}
+
+/* Navbar container height helpers (responsive) */
+.navbar-container {
+  height: 35px;
+  display: flex;
+  align-items: center; /* vertically center navbar contents */
+}
+/* media query for smaller screens */
+@media (max-width: 575.98px) {
+  .navbar-container {
+    height: 25px;
+  }
+}
+
+/* Mobile navbar improvements */
+@media (max-width: 575.98px) {
+  /* Reduce logo size so it fits the compact header */
+  .navbar-brand img {
+    height: 28px;
+    width: auto;
+  }
+
+  /* Make the toggler larger and easier to tap */
+  .navbar-toggler {
+    padding: 0.35rem 0.45rem; /* restore tappable size */
+    margin-left: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    color: var(--text); /* ensure icon inherits readable color */
+    position: relative; /* needed for the ::after hit-area */
+  }
+
+  /* Reduce the visual size of the toggler icon on small screens while
+     keeping a large tappable area for accessibility. The pseudo-element
+     creates the larger hit-area while the real icon is scaled down. */
+  .navbar-toggler .navbar-toggler-icon {
+    transform: scale(0.5);
+    transform-origin: center;
+    transition: transform 160ms ease;
+    display: inline-block;
+  }
+
+  /* Keep an explicit hit area to preserve 56x56 touch target */
+  .navbar-toggler::after {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* allow clicks to hit the toggler button itself */
+    border-radius: 50%;
+  }
+
+  /* When collapsed, make the menu a full-width panel from the top */
+  .navbar-collapse {
+    background: var(--card-bg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: 1050;
+    border-top: 1px solid var(--card-border);
+    /* reduced padding to make dropdown more compact (~30% smaller) */
+    padding: 0.5rem 0.7rem;
+    transform-origin: top center;
+    transform: translateY(-8px);
+    opacity: 0;
+    transition: transform 220ms ease, opacity 220ms ease;
+    max-height: calc(100vh - 60px);
+    overflow: auto;
+    pointer-events: auto; /* ensure links are clickable */
+  }
+
+  /* Backdrop (decorative) - appears when .show is added to collapse */
+  .navbar-collapse.show::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.28);
+    z-index: 1040; /* behind the collapse which is 1050 */
+  }
+
+  /* Ensure the decorative backdrop does not intercept pointer events
+     that should go to the menu items (the document click listener will
+     still detect backdrop clicks to close the menu). */
+  .navbar-collapse.show::before {
+    pointer-events: none;
+  }
+
+  /* When the menu is shown, animate into place */
+  .navbar-collapse.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* Space out nav links for easier tapping */
+  /* slightly reduced link padding & font-size to shrink overall dropdown (~30% lighter) */
+  .navbar-nav .nav-link {
+    padding: 0.44rem 0.36rem;
+    font-size: 0.86rem;
+    line-height: 1.2;
+  }
+
+  /* Make sure the theme toggle sits inline and visible */
+  .navbar .btn#themeToggle {
+    display: inline-block;
+    margin-top: 0.25rem;
+  }
 }
 
 /* Accessibility: skip link */
@@ -91,6 +241,23 @@ body {
   object-fit: cover;
   max-height: 220px;
   aspect-ratio: 4 / 3;
+}
+
+/* Package card helpers for static Top Packages markup */
+.package-rating {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.95rem;
+}
+.btn-whatsapp-cta {
+  background: #25d366;
+  color: #fff !important;
+  border: 1px solid #25d366;
+}
+.btn-share {
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
 }
 
 .whatsapp-fab {
@@ -147,6 +314,15 @@ footer a:hover {
 .navbar-light .navbar-brand {
   color: var(--text);
 }
+/* Ensure the toggler icon is visible in dark themes */
+html[data-theme="dark"] .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Also make the toggler visible when navbar has light background in dark theme */
+.navbar-light .navbar-toggler-icon {
+  filter: none;
+}
 .btn-primary {
   background-color: var(--brand-primary);
   border-color: var(--brand-primary);
@@ -185,6 +361,29 @@ img {
   height: 60vh;
 }
 
+/* WhatsApp-styled button for hero CTAs */
+.btn-whatsapp {
+  background-color: #25d366;
+  border-color: #25d366;
+  color: #fff !important;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+  background-color: #20c45a;
+  border-color: #20c45a;
+  color: #fff !important;
+}
+.btn-whatsapp .btn-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  filter: brightness(0) invert(1);
+}
+/* (progress bar removed - UI simplified per request) */
+
 /* Mobile-specific adjustments */
 @media (max-width: 767.98px) {
   /* slightly reduce image height to avoid heavy cropping */
@@ -193,43 +392,52 @@ img {
   }
 
   /* overlay caption at the bottom with tighter padding */
-    .carousel-caption { 
-      position: absolute; 
-      left: 8px; 
-      right: 8px; 
-      bottom: 12px; 
-      /* reduced opacity so background is more visible */ 
-      background: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.25)); 
-      margin: 0; 
-      padding: 8px; 
-      border-radius: 8px; 
-      max-width: calc(100% - 16px); 
-    }
+  .carousel-caption {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: 0px;
+    /* reduced opacity so background is more visible */
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.28),
+      rgba(0, 0, 0, 0.22)
+    );
+    margin: 0;
+    padding: 6px 8px; /* slightly tighter */
+    border-radius: 8px;
+    max-width: calc(100% - 32px); /* more breathing room */
+  }
 
   .carousel-caption h2 {
-      font-size: 0.9rem;
-    margin: 0 0 6px;
+    font-size: 0.62rem;
+    margin: 0 0 4px;
+    line-height: 1.15;
   }
   .carousel-caption p {
-      font-size: 0.8rem;
-    margin: 0 0 8px;
+    font-size: 0.38rem;
+    margin: 0 0 6px;
+    line-height: 1.2;
   }
 
   /* Stack CTA buttons vertically so they are finger-friendly */
   .carousel-caption .btn {
-      display: block; 
-      width: 100%; 
-      margin-bottom: 6px; 
-      padding: 0.45rem 0.6rem; 
-      font-size: 0.88rem; 
+    display: block !important;
+    width: 50%;
+    margin-bottom: 6px;
+    padding: 0.36rem 0.5rem; /* slightly smaller touch target but still tappable */
+    font-size: 0.82rem;
+    border-radius: 6px;
   }
   .carousel-caption .btn:last-child {
     margin-bottom: 0;
   }
 
   /* keep indicators visible above the caption */
+  /* On small screens the indicators can overlap images/text; move them up
+     a bit and hide on very small screens. */
   .carousel-indicators {
-    bottom: 86px;
+    bottom: 100px;
   }
 
   /* very small devices - tweak font sizes and image height */
@@ -238,13 +446,82 @@ img {
       height: 34vh;
     }
     .carousel-caption h2 {
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
     .carousel-caption p {
-      font-size: 0.9rem;
+      font-size: 0.86rem;
     }
     .carousel-indicators {
-      bottom: 76px;
+      bottom: 120px;
     }
+
+    /* For the smallest screens hide indicators to avoid overlap */
+    @media (max-width: 360px) {
+      .carousel-indicators {
+        display: none;
+      }
+    }
+  }
+
+  /* --- New: reduce caption size and control buttons on mobile --- */
+  /* Update: use explicit sizes instead of transform scaling for mobile */
+  .carousel-caption {
+    transform: none;
+    transform-origin: unset;
+    padding: 8px 10px;
+    border-radius: 6px;
+    max-width: 220px; /* keep caption compact on small screens */
+    left: 8px !important;
+    right: 8px !important;
+    bottom: 8px !important;
+  }
+
+  /* Explicit, reduced font sizes for mobile captions (approx ~50% visual reduction from desktop) */
+  .carousel-caption h2 {
+    font-size: 0.95rem;
+    margin: 0 0 4px;
+    line-height: 1.1;
+  }
+  .carousel-caption p {
+    font-size: 0.82rem;
+    margin: 0 0 6px;
+    line-height: 1.15;
+  }
+
+  /* Keep CTAs compact but usable on mobile */
+  .carousel-caption .btn {
+    width: 48% !important;
+    padding: 0.36rem 0.5rem;
+    font-size: 0.82rem;
+  }
+
+  /* Reduce the prev/next control visuals by ~30% but preserve a large hit area */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 24px;
+    height: 24px;
+    top: 15%;
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    padding: 0;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 14px;
+    height: 14px;
+    background-size: 14px 14px;
+  }
+
+  /* Keep a generous clickable area for accessibility (invisible padding) */
+  .carousel-control-prev::after,
+  .carousel-control-next::after {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

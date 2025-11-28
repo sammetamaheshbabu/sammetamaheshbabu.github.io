@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ToorIndia — Explore India with Experts</title>
+    <meta
+      name="description"
+      content="ToorIndia: curated Indian travel packages, expert tour managers, and top-rated experiences. Book via WhatsApp."
+    />
+    <meta name="author" content="ToorIndia" />
+    <link rel="canonical" href="https://toorindia.com/" />
+    <link rel="alternate" hreflang="en" href="https://toorindia.com/" />
+    <meta name="robots" content="index,follow" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- Theme color (light/dark) -->
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#ffffff"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#0b0b0b"
+    />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:site_name" content="ToorIndia" />
+    <meta
+      property="og:title"
+      content="ToorIndia — Explore India with Experts"
+    />
+    <meta
+      property="og:description"
+      content="ToorIndia: curated Indian travel packages, expert tour managers, and top-rated experiences. Book via WhatsApp."
+    />
+    <meta property="og:url" content="https://toorindia.com/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://toorindia.com/assets/img/TOOR_INDIA_LOGO.png"
+    />
+    <meta property="og:image:alt" content="ToorIndia Logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ToorIndia — Explore India with Experts"
+    />
+    <meta
+      name="twitter:description"
+      content="ToorIndia: curated Indian travel packages, expert tour managers, and top-rated experiences."
+    />
+    <meta
+      name="twitter:image"
+      content="https://toorindia.com/assets/img/TOOR_INDIA_LOGO.png"
+    />
+
+    <!-- Performance hints -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- Favicons: ICO fallback, PNGs for modern devices, Apple touch, Safari mask, MS tile, and web manifest -->
+    <link rel="icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/TOOR_INDIA_LOGO.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/TOOR_INDIA_LOGO.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/TOOR_INDIA_LOGO.png"
+    />
+    <link
+      rel="mask-icon"
+      href="./assets/img/TOOR_INDIA_LOGO.png"
+      color="#0b0b0b"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/img/TOOR_INDIA_LOGO.png"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Header / Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="./assets/img/TOOR_INDIA_LOGO_1.png"
+            alt="ToorIndia Logo"
+            height="25  "
+            class="me-2"
+            decoding="async"
+          />
+          <span class="fw-semibold">ToorIndia</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-it-works">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="ms-lg-3 mt-3 mt-lg-0">
+            <button
+              id="themeToggle"
+              class="btn btn-sm btn-outline-secondary"
+              type="button"
+              aria-label="Toggle dark mode"
+            >
+              🌙 Dark
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main id="main">
+      <!-- Carousel Hero (static-friendly for GitHub Pages) -->
+      <section id="hero-carousel" class="mb-5">
+        <div
+          id="carouselHero"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+          data-bs-pause="hover"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselHero"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHero"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHero"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <picture>
+                <source
+                  srcset="./assets/img/optimized/nature_1=Monsoon Diaries Await You=Escape routine and dive into unforgettable rainy escapes.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./assets/img/optimized/nature_1=Monsoon Diaries Await You=Escape routine and dive into unforgettable rainy escapes.jpg"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./assets/img/Main_Slider/nature_1=Monsoon Diaries Await You=Escape routine and dive into unforgettable rainy escapes.jpg"
+                  class="d-block w-100"
+                  alt="Monsoon Diaries"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <div
+                class="carousel-caption d-md-block text-start p-3"
+                style="max-width: 640px; left: 5%; right: auto"
+              >
+                <h2 class="display-6 fw-bold">
+                  Discover India with curated experiences
+                </h2>
+                <p class="lead">
+                  Handpicked itineraries, expert tour managers, and seamless
+                  planning for every traveller.
+                </p>
+                <p class="mt-3">
+                  <a href="#packages" class="btn btn-primary btn-lg me-2"
+                    >Explore Packages</a
+                  >
+                  <a
+                    href="https://wa.me/919676003945?text=Hi%2C%20I%27m%20interested%20in%20booking%205D%2F6N%20Manali%20trip."
+                    class="btn btn-outline-light btn-lg"
+                    target="_blank"
+                    rel="noopener"
+                    >Book on WhatsApp</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <picture>
+                <source
+                  srcset="./assets/img/optimized/nature_3=Travel with the Rhythm of Rain=Scenic drives, vibrant landscapes, and soulful journeys this season.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./assets/img/optimized/nature_3=Travel with the Rhythm of Rain=Scenic drives, vibrant landscapes, and soulful journeys this season.jpg"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./assets/img/Main_Slider/nature_3=Travel with the Rhythm of Rain=Scenic drives, vibrant landscapes, and soulful journeys this season.jpg"
+                  class="d-block w-100"
+                  alt="Travel with the Rhythm of Rain"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <div
+                class="carousel-caption d-md-block text-center p-3"
+                style="max-width: 640px; left: 50%; transform: translateX(-50%)"
+              >
+                <h2 class="display-6 fw-bold">
+                  Scenic drives & soulful journeys
+                </h2>
+                <p class="lead">
+                  Escape routine and dive into unforgettable experiences this
+                  season.
+                </p>
+                <p class="mt-3">
+                  <a href="#packages" class="btn btn-primary btn-lg me-2"
+                    >See Packages</a
+                  >
+                  <a href="#gallery" class="btn btn-outline-light btn-lg"
+                    >View Gallery</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <picture>
+                <source
+                  srcset="./assets/img/optimized/offer_1=Drenched in Beauty, Wrapped in Nature=Experience the magic of rains across valleys, forts, and forests.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./assets/img/optimized/offer_1=Drenched in Beauty, Wrapped in Nature=Experience the magic of rains across valleys, forts, and forests.jpg"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./assets/img/Main_Slider/offer_1=Drenched in Beauty, Wrapped in Nature=Experience the magic of rains across valleys, forts, and forests.jpg"
+                  class="d-block w-100"
+                  alt="Drenched in Beauty"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <div
+                class="carousel-caption d-md-block text-end p-3"
+                style="max-width: 640px; right: 5%; left: auto"
+              >
+                <h2 class="display-6 fw-bold">
+                  Opening Offers on Temple & Nature Tours
+                </h2>
+                <p class="lead">
+                  Early bird discounts — reserve your spiritual or nature escape
+                  now.
+                </p>
+                <p class="mt-3">
+                  <a href="#contact" class="btn btn-primary btn-lg me-2"
+                    >Contact Us</a
+                  >
+                  <a
+                    href="https://wa.me/919676003945"
+                    class="btn btn-outline-light btn-lg"
+                    target="_blank"
+                    rel="noopener"
+                    >Chat on WhatsApp</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselHero"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselHero"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Top Packages -->
+      <section class="py-5" id="packages">
+        <div class="container">
+          <div
+            class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4"
+          >
+            <div>
+              <h2 class="h3 fw-bold mb-1">Top Packages</h2>
+              <p class="text-muted mb-0">
+                Popular trips loved by our travellers
+              </p>
+            </div>
+            <a href="#" class="text-primary text-decoration-none">View all</a>
+          </div>
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="./assets/img/packages_photos/Bhavani island/Bhavani-island-2.jpg"
+                  class="card-img-top"
+                  alt="Manali 5D/6N package cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="card-body">
+                  <h3 class="h5 card-title mb-1">Manali 5D/6N</h3>
+                  <p class="card-text text-muted mb-3">
+                    Snow peaks, Solang Valley, and scenic drives.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-semibold">From ₹18,999</span>
+                    <a
+                      class="btn btn-sm btn-primary"
+                      target="_blank"
+                      rel="noopener"
+                      href="https://wa.me/919676003945?text=Hi%2C%20I%27m%20interested%20in%20booking%205D%2F6N%20Manali%20trip."
+                      >WhatsApp</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="./assets/img/toor_india_package_image.avif"
+                  class="card-img-top"
+                  alt="Kashmir 6D/7N package cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="card-body">
+                  <h3 class="h5 card-title mb-1">Kashmir 6D/7N</h3>
+                  <p class="card-text text-muted mb-3">
+                    Dal Lake shikaras, Gulmarg meadows, and more.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-semibold">From ₹24,999</span>
+                    <a
+                      class="btn btn-sm btn-primary"
+                      target="_blank"
+                      rel="noopener"
+                      href="https://wa.me/919676003945?text=Hi%2C%20I%27m%20interested%20in%20booking%205D%2F6N%20Manali%20trip."
+                      >WhatsApp</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="./assets/img/toor_india_package_image.avif"
+                  class="card-img-top"
+                  alt="Goa 3D/4N package cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="card-body">
+                  <h3 class="h5 card-title mb-1">Goa 3D/4N</h3>
+                  <p class="card-text text-muted mb-3">
+                    Beaches, sunsets, and vibrant nightlife.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-semibold">From ₹10,999</span>
+                    <a
+                      class="btn btn-sm btn-primary"
+                      target="_blank"
+                      rel="noopener"
+                      href="https://wa.me/919676003945?text=Hi%2C%20I%27m%20interested%20in%20booking%205D%2F6N%20Manali%20trip."
+                      >WhatsApp</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="py-5 bg-light" id="how-it-works">
+        <div class="container">
+          <h2 class="h3 fw-bold mb-4 text-center">How It Works</h2>
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+                <img
+                  src="./assets/img/icons/Search.png"
+                  height="40"
+                  alt="Discover"
+                  class="mb-3"
+                />
+                <h3 class="h5">Discover</h3>
+                <p class="text-muted mb-0">
+                  Browse curated packages for every season and travel style.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+                <img
+                  src="./assets/img/icons/Conversation.png"
+                  height="40"
+                  alt="Plan"
+                  class="mb-3"
+                />
+                <h3 class="h5">Plan</h3>
+                <p class="text-muted mb-0">
+                  Talk to a tour manager on WhatsApp to personalise your trip.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+                <img
+                  src="./assets/img/icons/rocket.png"
+                  height="40"
+                  alt="Go"
+                  class="mb-3"
+                />
+                <h3 class="h5">Go</h3>
+                <p class="text-muted mb-0">
+                  Enjoy a seamless, well-managed experience from start to
+                  finish.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews / Testimonials -->
+      <section class="py-5" id="reviews">
+        <div class="container">
+          <h2 class="h3 fw-bold mb-4 text-center">What travellers say</h2>
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <div class="p-4 rounded-4 shadow-sm border h-100">
+                <p class="mb-2">
+                  “Amazing experience! Extremely well-planned and communicative
+                  team.”
+                </p>
+                <div class="small text-muted">— Priya</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="p-4 rounded-4 shadow-sm border h-100">
+                <p class="mb-2">
+                  “We loved our Kashmir trip—great hotels and a super friendly
+                  tour manager.”
+                </p>
+                <div class="small text-muted">— Anil</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="p-4 rounded-4 shadow-sm border h-100">
+                <p class="mb-2">
+                  “Smooth from start to finish. Highly recommend ToorIndia!”
+                </p>
+                <div class="small text-muted">— Sana</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Photo Gallery -->
+      <section class="py-5 bg-light" id="gallery">
+        <div class="container">
+          <h2 class="h3 fw-bold mb-4 text-center">Photo Gallery</h2>
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <img
+                src="./assets/img/gallary/Ananthagiri hills_4.jpg"
+                class="img-fluid rounded-3"
+                alt="Scenic Indian destination"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="./assets/img/gallary/ananthagiri resorts_7.jpg"
+                class="img-fluid rounded-3"
+                alt="Beautiful Indian landscape"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="./assets/img/toor_india_package_image.avif"
+                class="img-fluid rounded-3"
+                alt="Popular tourist attraction in India"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="./assets/img/toor_india_package_image.avif"
+                class="img-fluid rounded-3"
+                alt="Indian travel experience"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="py-5" id="contact">
+        <div class="container">
+          <div class="p-5 bg-primary text-white rounded-4 text-center shadow">
+            <h2 class="h3 fw-bold">Ready to plan your next trip?</h2>
+            <p class="lead opacity-90">
+              Chat with our tour manager on WhatsApp to get started now.
+            </p>
+            <a
+              class="btn btn-light btn-lg"
+              target="_blank"
+              rel="noopener"
+              href="https://wa.me/919676003945?text=Hi%2C%20I%27m%20interested%20in%20booking%205D%2F6N%20Manali%20trip."
+              >Chat on WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5 border-top bg-white">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img
+              src="./assets/img/TOOR_INDIA_LOGO.png"
+              alt="ToorIndia"
+              height="36"
+              class="mb-3"
+            />
+            <p class="text-muted">
+              Curated tours and personalised travel planning across India.
+            </p>
+          </div>
+          <div class="col-6 col-md-4">
+            <h6 class="fw-semibold">Company</h6>
+            <ul class="list-unstyled small">
+              <li><a href="#" class="text-decoration-none">About</a></li>
+              <li><a href="#" class="text-decoration-none">Blog</a></li>
+              <li><a href="#" class="text-decoration-none">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h6 class="fw-semibold">Legal</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="#" class="text-decoration-none">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Terms of Service</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none">Refund & Returns</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-4 small text-muted">
+          © <span id="year"></span> ToorIndia. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/919676003945?text=Hi%2C%20I%27m%20interested%20in%20booking%205D%2F6N%20Manali%20trip."
+      class="whatsapp-fab"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      <img
+        src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
+        alt="WhatsApp"
+        decoding="async"
+      />
+    </a>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ToorIndia",
+        "url": "https://toorindia.com/",
+        "logo": "https://toorindia.com/assets/img/TOOR_INDIA_LOGO.png",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "telephone": "+91-9676003945",
+            "areaServed": "IN",
+            "availableLanguage": ["en", "hi"]
+          }
+        ],
+        "sameAs": []
+      }
+    </script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      (function () {
+        const root = document.documentElement;
+        const btn = document.getElementById("themeToggle");
+        const stored = localStorage.getItem("theme");
+        if (stored) {
+          root.setAttribute("data-theme", stored);
+        }
+        function applyLabel(theme) {
+          if (theme === "dark") {
+            btn.textContent = "☀️ Light";
+            btn.setAttribute("aria-label", "Switch to light mode");
+          } else {
+            btn.textContent = "🌙 Dark";
+            btn.setAttribute("aria-label", "Switch to dark mode");
+          }
+        }
+        applyLabel(root.getAttribute("data-theme"));
+        btn.addEventListener("click", () => {
+          const current = root.getAttribute("data-theme");
+          const next = current === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", next);
+          localStorage.setItem("theme", next);
+          applyLabel(next);
+        });
+      })();
+    </script>
+
+    <!-- Bootstrap JS (optional: for navbar collapse icon only; no custom JS interactions) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
