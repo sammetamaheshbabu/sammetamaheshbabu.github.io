@@ -337,6 +337,11 @@ img {
   color: transparent;
 }
 
+/* Generic border color should follow theme variables */
+.border {
+  border-color: var(--card-border) !important;
+}
+
 /* ---- Dark mode readability tweaks (packages and UI) ---- */
 /* Boost contrast for package card titles & details */
 html[data-theme="dark"] #packages .card-title {
@@ -371,6 +376,32 @@ html[data-theme="dark"] a.text-primary {
 html[data-theme="dark"] #packages .card[style] {
   background: var(--card-bg) !important;
   color: var(--text) !important;
+}
+
+/* ---- Dark mode for Bootstrap Accordion (FAQ) ---- */
+html[data-theme="dark"] .accordion .accordion-item {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+html[data-theme="dark"] .accordion .accordion-button {
+  background-color: var(--card-bg);
+  color: var(--text);
+}
+html[data-theme="dark"] .accordion .accordion-button:not(.collapsed) {
+  background-color: var(--card-bg);
+  color: var(--text);
+  box-shadow: inset 0 -1px 0 var(--card-border);
+}
+html[data-theme="dark"] .accordion .accordion-button::after {
+  filter: invert(1) opacity(0.85);
+}
+html[data-theme="dark"] .accordion .accordion-body {
+  background-color: var(--card-bg);
+  color: var(--text);
+  border-top: 1px solid var(--card-border);
+}
+html[data-theme="dark"] .accordion .accordion-collapse {
+  background-color: var(--card-bg);
 }
 
 /* ===== Photo Gallery: Continuous Marquee ===== */
