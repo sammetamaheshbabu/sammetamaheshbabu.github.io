@@ -685,3 +685,62 @@ html[data-theme="dark"] .accordion .accordion-collapse {
     transform: translateY(-50%);
   }
 }
+
+/* ===== Engagement additions: share, sticky CTA, print ===== */
+.share-links a {
+  text-decoration: none;
+}
+.share-links a + a {
+  margin-left: 10px;
+}
+.share-links .btn {
+  padding: 0.2rem 0.5rem;
+}
+
+.sticky-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--card-bg);
+  border-top: 1px solid var(--card-border);
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.06);
+  padding: 10px 0;
+  z-index: 1060;
+}
+@media (min-width: 768px) {
+  .sticky-cta {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  body {
+    padding-bottom: 72px;
+  }
+}
+
+/* Hide floating WhatsApp FAB on small screens to avoid overlap with sticky CTA */
+@media (max-width: 767.98px) {
+  .whatsapp-fab {
+    display: none !important;
+  }
+}
+
+@media print {
+  nav,
+  footer,
+  .sticky-cta,
+  .navbar,
+  .btn,
+  .breadcrumb,
+  .whatsapp-fab {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}

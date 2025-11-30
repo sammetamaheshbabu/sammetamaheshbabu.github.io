@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Toor India Blog</title>
+    <link>https://toorindia.com/blog/</link>
+    <description>Travel tips, destination guides, and company updates from Toor India.</description>
+    <language>en</language>
+    <lastBuildDate>Sat, 29 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Static RSS</generator>
+
+    <item>
+      <title>Monsoon Travel: Top 5 Getaways Near Hyderabad</title>
+      <link>https://toorindia.com/blog/#monsoon-travel-top-5-getaways-near-hyderabad</link>
+      <guid isPermaLink="false">toorindia-blog-2025-monsoon-top5</guid>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <description>Discover misty hills, hidden waterfalls, and lush green trails this monsoon.</description>
+    </item>
+
+    <item>
+      <title>Women-Only Tours: Safe, Fun, and Empowering</title>
+      <link>https://toorindia.com/blog/#women-only-tours-safe-fun-and-empowering</link>
+      <guid isPermaLink="false">toorindia-blog-2025-women-only-tours</guid>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <description>Why our curated women-only trips are perfect for solo travellers and groups.</description>
+    </item>
+
+    <item>
+      <title>How To Plan A Custom Tour With Toor India</title>
+      <link>https://toorindia.com/blog/#how-to-plan-a-custom-tour-with-toor-india</link>
+      <guid isPermaLink="false">toorindia-blog-2025-custom-tour-guide</guid>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <description>Step-by-step guide to planning your personalised itinerary with our tour managers.</description>
+    </item>
+
+    <item>
+      <title>Customer Stories: Memorable Moments From Recent Trips</title>
+      <link>https://toorindia.com/blog/#customer-stories-memorable-moments</link>
+      <guid isPermaLink="false">toorindia-blog-2025-customer-stories</guid>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <description>A roundup of feedback and favourite moments from travellers across India.</description>
+    </item>
+  </channel>
+</rss>

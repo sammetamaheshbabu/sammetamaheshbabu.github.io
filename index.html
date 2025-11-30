@@ -102,14 +102,38 @@
       name="msapplication-TileImage"
       content="./assets/img/TOOR_INDIA_LOGO.png"
     />
+    <style>
+      /* Accessibility: show skip link on focus */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #000;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        z-index: 1000;
+        border-radius: 0.25rem;
+        text-decoration: none;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
+      /* Avoid FAB + sticky bar overlap on mobile for this page */
+      @media (max-width: 767.98px) {
+        .whatsapp-fab {
+          display: none !important;
+        }
+      }
+    </style>
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <!-- Header / Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
     >
       <div class="container navbar-container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="/">
           <img
             src="./assets/img/TOOR_INDIA_LOGO_1.png"
             alt="Toor India Logo"
@@ -133,7 +157,7 @@
         <div class="collapse navbar-collapse" id="nav">
           <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#packages">Packages</a>
+              <a class="nav-link" href="/packages/">Packages</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#how-it-works">How It Works</a>
@@ -143,6 +167,12 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/search/">Search</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -509,6 +539,7 @@
                   </div>
                   <div class="card-body">
                     <h3 class="h5 card-title mb-1">Bhadrachalam 3D/2N</h3>
+                    <div class="text-muted small mb-1">Duration: 3D/2N</div>
                     <div class="text-muted small mb-2">
                       Place cover: Bhadrachalam Temple, Godavari River
                     </div>
@@ -525,6 +556,11 @@
                       class="d-flex justify-content-between align-items-center"
                     >
                       <span class="fw-semibold">From ₹11,999</span>
+                      <a
+                        class="btn btn-sm btn-outline-primary"
+                        href="/packages/bhadrachalam-3d-2n/"
+                        >View Details</a
+                      >
                       <a
                         class="btn btn-sm btn-success"
                         target="_blank"
@@ -630,6 +666,7 @@
                   </div>
                   <div class="card-body">
                     <h3 class="h5 card-title mb-1">Bhavani Island 2D/1N</h3>
+                    <div class="text-muted small mb-1">Duration: 2D/1N</div>
                     <div class="text-muted small mb-2">
                       Place cover: Bhavani Island, Krishna River
                     </div>
@@ -646,6 +683,11 @@
                       class="d-flex justify-content-between align-items-center"
                     >
                       <span class="fw-semibold">From ₹7,999</span>
+                      <a
+                        class="btn btn-sm btn-outline-primary"
+                        href="/packages/bhavani-island-2d-1n/"
+                        >View Details</a
+                      >
                       <a
                         class="btn btn-sm btn-success"
                         target="_blank"
@@ -733,6 +775,7 @@
                   </div>
                   <div class="card-body">
                     <h3 class="h5 card-title mb-1">Chikkamagaluru 3D/2N</h3>
+                    <div class="text-muted small mb-1">Duration: 3D/2N</div>
                     <div class="text-muted small mb-2">
                       Place cover: Mullayanagiri, Coffee Estates
                     </div>
@@ -749,6 +792,11 @@
                       class="d-flex justify-content-between align-items-center"
                     >
                       <span class="fw-semibold">From ₹12,999</span>
+                      <a
+                        class="btn btn-sm btn-outline-primary"
+                        href="/packages/chikkamagaluru-3d-2n/"
+                        >View Details</a
+                      >
                       <a
                         class="btn btn-sm btn-success"
                         target="_blank"
@@ -836,6 +884,7 @@
                   </div>
                   <div class="card-body">
                     <h3 class="h5 card-title mb-1">Goa 3D/2N</h3>
+                    <div class="text-muted small mb-1">Duration: 3D/2N</div>
                     <div class="text-muted small mb-2">
                       Place cover: North & South Goa
                     </div>
@@ -852,6 +901,11 @@
                       class="d-flex justify-content-between align-items-center"
                     >
                       <span class="fw-semibold">From ₹10,999</span>
+                      <a
+                        class="btn btn-sm btn-outline-primary"
+                        href="/packages/goa-3d-2n/"
+                        >View Details</a
+                      >
                       <a
                         class="btn btn-sm btn-success"
                         target="_blank"
@@ -939,6 +993,7 @@
                   </div>
                   <div class="card-body">
                     <h3 class="h5 card-title mb-1">Kochi Kerala 4D/3N</h3>
+                    <div class="text-muted small mb-1">Duration: 4D/3N</div>
                     <div class="text-muted small mb-2">
                       Place cover: Kochi Fort, Alleppey Backwaters
                     </div>
@@ -955,6 +1010,11 @@
                       class="d-flex justify-content-between align-items-center"
                     >
                       <span class="fw-semibold">From ₹17,999</span>
+                      <a
+                        class="btn btn-sm btn-outline-primary"
+                        href="/packages/kochi-kerala-4d-3n/"
+                        >View Details</a
+                      >
                       <a
                         class="btn btn-sm btn-success"
                         target="_blank"
@@ -1042,6 +1102,7 @@
                   </div>
                   <div class="card-body">
                     <h3 class="h5 card-title mb-1">Maharashtra 4D/3N</h3>
+                    <div class="text-muted small mb-1">Duration: 4D/3N</div>
                     <div class="text-muted small mb-2">
                       Place cover: Ajanta, Ellora, Raigad Fort
                     </div>
@@ -1058,6 +1119,11 @@
                       class="d-flex justify-content-between align-items-center"
                     >
                       <span class="fw-semibold">From ₹14,999</span>
+                      <a
+                        class="btn btn-sm btn-outline-primary"
+                        href="/packages/maharashtra-4d-3n/"
+                        >View Details</a
+                      >
                       <a
                         class="btn btn-sm btn-success"
                         target="_blank"
@@ -1145,6 +1211,7 @@
                   </div>
                   <div class="card-body">
                     <h3 class="h5 card-title mb-1">Malarikkal 3D/2N</h3>
+                    <div class="text-muted small mb-1">Duration: 3D/2N</div>
                     <div class="text-muted small mb-2">
                       Place cover: Malarikkal Lily Fields, Alleppey
                     </div>
@@ -1161,6 +1228,11 @@
                       class="d-flex justify-content-between align-items-center"
                     >
                       <span class="fw-semibold">From ₹11,999</span>
+                      <a
+                        class="btn btn-sm btn-outline-primary"
+                        href="/packages/malarikkal-3d-2n/"
+                        >View Details</a
+                      >
                       <a
                         class="btn btn-sm btn-success"
                         target="_blank"
@@ -1248,6 +1320,7 @@
                   </div>
                   <div class="card-body">
                     <h3 class="h5 card-title mb-1">Manali 5D/4N</h3>
+                    <div class="text-muted small mb-1">Duration: 5D/4N</div>
                     <div class="text-muted small mb-2">
                       Place cover: Manali, Solang Valley
                     </div>
@@ -1264,6 +1337,11 @@
                       class="d-flex justify-content-between align-items-center"
                     >
                       <span class="fw-semibold">From ₹18,999</span>
+                      <a
+                        class="btn btn-sm btn-outline-primary"
+                        href="/packages/manali-5d-4n/"
+                        >View Details</a
+                      >
                       <a
                         class="btn btn-sm btn-success"
                         target="_blank"
@@ -1316,7 +1394,7 @@
                     class="mt-2 d-flex flex-column align-items-center gap-2 w-100"
                   >
                     <a
-                      href="/packages"
+                      href="/packages/"
                       class="btn btn-outline-warning"
                       style="
                         font-weight: 700;
@@ -1327,7 +1405,7 @@
                       >See All</a
                     >
                     <a
-                      href="#custom-tour"
+                      href="https://wa.me/919676003945?text=Hi%20Team%20Toor%20India%2C%20I%20want%20to%20create%20a%20custom%20tour%20package%20for%20the%20destination%3A%20"
                       class="btn btn-outline-success"
                       style="
                         font-weight: 700;
@@ -1755,6 +1833,28 @@
       />
     </a>
 
+    <!-- Mobile Sticky CTA: Book / Customize -->
+    <div class="sticky-cta d-md-none" role="region" aria-label="Quick actions">
+      <a
+        href="https://wa.me/919676003945?text=Hi%20Team%20Toor%20India%2C%20may%20I%20know%20the%20latest%20packages%20and%20what%27s%20trending%20right%20now%3F"
+        class="btn btn-success flex-fill"
+        target="_blank"
+        rel="noopener"
+        aria-label="Chat on WhatsApp to book"
+      >
+        Book Now
+      </a>
+      <a
+        href="https://wa.me/919676003945?text=Hi%20Team%20Toor%20India%2C%20I%20want%20to%20create%20a%20custom%20tour%20package%20for%20the%20destination%3A%20"
+        class="btn btn-outline-success flex-fill"
+        target="_blank"
+        rel="noopener"
+        aria-label="Customize your tour on WhatsApp"
+      >
+        Customize
+      </a>
+    </div>
+
     <!-- Structured Data -->
     <script type="application/ld+json">
       {
@@ -1772,7 +1872,11 @@
             "availableLanguage": ["en", "hi"]
           }
         ],
-        "sameAs": []
+        "sameAs": [
+          "https://www.instagram.com/toorindia_com",
+          "https://x.com/toorindia",
+          "https://www.linkedin.com/company/toorindia/"
+        ]
       }
     </script>
 
@@ -1849,6 +1953,24 @@
           }
         });
       })();
+    </script>
+
+    <!-- Structured Data: WebSite with SearchAction -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Toor India",
+        "url": "https://toorindia.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://toorindia.com/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
     </script>
     <!-- progress bar removed to simplify UI per request -->
   </body>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search — Toor India</title>
+    <meta
+      name="description"
+      content="Search Toor India for packages, pages, and contact information."
+    />
+    <meta name="author" content="Toor India" />
+    <link rel="canonical" href="https://toorindia.com/search/" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:site_name" content="Toor India" />
+    <meta property="og:title" content="Search — Toor India" />
+    <meta
+      property="og:description"
+      content="Find packages, how it works, gallery, blog, contact, and more on Toor India."
+    />
+    <meta property="og:url" content="https://toorindia.com/search/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://toorindia.com/assets/img/TOOR_INDIA_LOGO.png"
+    />
+    <meta property="og:image:alt" content="Toor India Logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Search — Toor India" />
+    <meta
+      name="twitter:description"
+      content="Find packages, how it works, gallery, blog, contact, and more on Toor India."
+    />
+    <meta
+      name="twitter:image"
+      content="https://toorindia.com/assets/img/TOOR_INDIA_LOGO.png"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="icon" href="../assets/img/favicon.ico" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <img
+            src="../assets/img/TOOR_INDIA_LOGO_1.png"
+            alt="Toor India Logo"
+            height="40"
+            class="me-2"
+          />
+          <span class="fw-semibold">Toor India</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/packages/">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#how-it-works">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact/">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/">Blog</a>
+            </li>
+          </ul>
+          <div class="ms-lg-3 mt-3 mt-lg-0">
+            <button
+              id="themeToggle"
+              class="btn btn-sm btn-outline-secondary"
+              type="button"
+              aria-label="Toggle dark mode"
+            >
+              🌙 Dark
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main" class="py-5">
+      <div class="container">
+        <h1 class="h3 fw-bold mb-3">Search</h1>
+        <p class="text-muted">Search across Toor India's pages and sections.</p>
+        <form class="mb-4" role="search" onsubmit="return false;">
+          <div class="input-group input-group-lg">
+            <span class="input-group-text" id="search-label" aria-hidden="true"
+              >🔎</span
+            >
+            <input
+              id="searchInput"
+              type="search"
+              class="form-control"
+              placeholder="Search destinations, packages, contact, blog…"
+              aria-label="Search"
+              aria-describedby="search-label"
+            />
+            <button id="searchBtn" class="btn btn-primary" type="button">
+              Search
+            </button>
+          </div>
+          <div class="form-text">Press Enter or click Search.</div>
+        </form>
+
+        <div id="results" class="row g-3">
+          <!-- Results injected here -->
+        </div>
+
+        <div id="noResults" class="alert alert-warning d-none" role="status">
+          No results found. Try different keywords like "Goa", "packages",
+          "refund", or "contact".
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-5 border-top bg-white">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img
+              src="../assets/img/TOOR_INDIA_LOGO_1.png"
+              alt="ToorIndia"
+              height="36"
+              class="mb-3"
+            />
+            <p class="text-muted">
+              Curated tours and personalised travel planning across India.
+            </p>
+          </div>
+          <div class="col-6 col-md-4">
+            <h6 class="fw-semibold">Company</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="../about/index.html" class="text-decoration-none"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="../blog/index.html" class="text-decoration-none"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="../careers/index.html" class="text-decoration-none"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h6 class="fw-semibold">Legal</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="../privacy/index.html" class="text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="../terms/index.html" class="text-decoration-none"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="../refund/index.html" class="text-decoration-none"
+                  >Refund & Returns</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-4 small text-muted">
+          © <span id="year"></span> Toor India. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      (function () {
+        const root = document.documentElement;
+        const btn = document.getElementById("themeToggle");
+        const stored = localStorage.getItem("theme");
+        if (stored) root.setAttribute("data-theme", stored);
+        function label(t) {
+          if (t === "dark") {
+            btn.textContent = "☀️ Light";
+            btn.setAttribute("aria-label", "Switch to light mode");
+          } else {
+            btn.textContent = "🌙 Dark";
+            btn.setAttribute("aria-label", "Switch to dark mode");
+          }
+        }
+        label(root.getAttribute("data-theme"));
+        btn.addEventListener("click", () => {
+          const cur = root.getAttribute("data-theme");
+          const next = cur === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", next);
+          localStorage.setItem("theme", next);
+          label(next);
+        });
+      })();
+
+      const DATA = [
+        {
+          title: "Home — Top Packages",
+          url: "../index.html#packages",
+          tags: ["packages", "trips", "deals", "bhadrachalam", "goa", "manali"],
+        },
+        {
+          title: "Home — How It Works",
+          url: "../index.html#how-it-works",
+          tags: ["how it works", "steps", "plan", "book"],
+        },
+        {
+          title: "Home — Gallery",
+          url: "../index.html#gallery",
+          tags: ["gallery", "photos", "images"],
+        },
+        {
+          title: "Contact",
+          url: "../contact/index.html",
+          tags: ["contact", "phone", "whatsapp", "email", "support"],
+        },
+        {
+          title: "About",
+          url: "../about/index.html",
+          tags: ["about", "mission", "values", "company"],
+        },
+        {
+          title: "Careers & Partnerships",
+          url: "../careers/index.html",
+          tags: ["careers", "jobs", "partner", "vlogger"],
+        },
+        {
+          title: "Blog",
+          url: "../blog/index.html",
+          tags: ["blog", "articles", "tips", "updates"],
+        },
+        {
+          title: "Privacy Policy",
+          url: "../privacy/index.html",
+          tags: ["privacy", "data", "policy"],
+        },
+        {
+          title: "Terms of Service",
+          url: "../terms/index.html",
+          tags: ["terms", "tos", "rules", "conduct"],
+        },
+        {
+          title: "Refund & Returns",
+          url: "../refund/index.html",
+          tags: ["refund", "return", "cancellation"],
+        },
+      ];
+
+      function getParam(name) {
+        const u = new URL(window.location.href);
+        return u.searchParams.get(name) || "";
+      }
+      function render(list) {
+        const wrap = document.getElementById("results");
+        const no = document.getElementById("noResults");
+        wrap.innerHTML = "";
+        if (!list.length) {
+          no.classList.remove("d-none");
+          return;
+        }
+        no.classList.add("d-none");
+        list.forEach((item) => {
+          const col = document.createElement("div");
+          col.className = "col-12 col-md-6";
+          col.innerHTML = `
+            <a class="text-decoration-none" href="${item.url}">
+              <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                <h2 class="h5 mb-1">${item.title}</h2>
+                <div class="small text-muted">${item.tags
+                  .slice(0, 4)
+                  .join(", ")}</div>
+              </div>
+            </a>`;
+          wrap.appendChild(col);
+        });
+      }
+      function search(q) {
+        const s = (q || "").trim().toLowerCase();
+        if (!s) return DATA;
+        return DATA.filter(
+          (it) =>
+            it.title.toLowerCase().includes(s) ||
+            it.tags.some((t) => t.includes(s))
+        );
+      }
+
+      const input = document.getElementById("searchInput");
+      const btn = document.getElementById("searchBtn");
+      input.value = getParam("q");
+      render(search(input.value));
+      function doSearch() {
+        const val = input.value;
+        const u = new URL(window.location.href);
+        u.searchParams.set("q", val);
+        history.replaceState(null, "", u.toString());
+        render(search(val));
+      }
+      btn.addEventListener("click", doSearch);
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          doSearch();
+        }
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

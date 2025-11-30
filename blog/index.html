@@ -11,6 +11,43 @@
     <meta name="author" content="Toor India" />
     <link rel="canonical" href="https://toorindia.com/blog/" />
     <meta name="robots" content="index,follow" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Toor India Blog RSS"
+      href="https://toorindia.com/blog/feed.xml"
+    />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:site_name" content="Toor India" />
+    <meta
+      property="og:title"
+      content="Toor India Blog — Travel tips, stories, and updates"
+    />
+    <meta
+      property="og:description"
+      content="Toor India Blog: travel tips, destination guides, monsoon travel ideas, and company updates."
+    />
+    <meta property="og:url" content="https://toorindia.com/blog/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://toorindia.com/assets/img/TOOR_INDIA_LOGO.png"
+    />
+    <meta property="og:image:alt" content="Toor India Logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Toor India Blog — Travel tips, stories, and updates"
+    />
+    <meta
+      name="twitter:description"
+      content="Toor India Blog: travel tips, destination guides, monsoon travel ideas, and company updates."
+    />
+    <meta
+      name="twitter:image"
+      content="https://toorindia.com/assets/img/TOOR_INDIA_LOGO.png"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -26,12 +63,13 @@
     <link rel="icon" href="../assets/img/favicon.ico" />
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <!-- Navbar (minimal) -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
     >
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <a class="navbar-brand d-flex align-items-center" href="/">
           <img
             src="../assets/img/TOOR_INDIA_LOGO_1.png"
             alt="Toor India Logo"
@@ -40,16 +78,73 @@
           />
           <span class="fw-semibold">Toor India</span>
         </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#blogNav"
+          aria-controls="blogNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="blogNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/packages/">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#how-it-works">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/search/">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact/">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Blog</a
+              >
+            </li>
+          </ul>
+          <div class="ms-lg-3 mt-3 mt-lg-0">
+            <button
+              id="themeToggle"
+              class="btn btn-sm btn-outline-secondary"
+              type="button"
+              aria-label="Toggle dark mode"
+            >
+              🌙 Dark
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
 
-    <main>
+    <main id="main">
       <!-- Hero -->
       <section class="py-5 bg-white border-bottom">
         <div class="container text-center">
           <h1 class="display-6 fw-bold mb-2">Toor India Blog</h1>
           <p class="text-muted mb-0">
             Travel tips, stories, and updates from our team
+          </p>
+          <p class="small mt-2">
+            <a
+              class="text-decoration-none"
+              href="/blog/feed.xml"
+              rel="alternate"
+              type="application/rss+xml"
+              >Subscribe via RSS</a
+            >
           </p>
         </div>
       </section>
@@ -59,9 +154,14 @@
         <div class="container">
           <div class="row g-4">
             <div class="col-12 col-md-6">
-              <article class="p-4 bg-white rounded-4 shadow-sm h-100">
+              <article
+                id="monsoon-travel-top-5-getaways-near-hyderabad"
+                class="p-4 bg-white rounded-4 shadow-sm h-100"
+              >
                 <h2 class="h5 mb-1">
-                  <a class="text-decoration-none" href="#"
+                  <a
+                    class="text-decoration-none"
+                    href="#monsoon-travel-top-5-getaways-near-hyderabad"
                     >Monsoon Travel: Top 5 Getaways Near Hyderabad</a
                   >
                 </h2>
@@ -75,9 +175,14 @@
               </article>
             </div>
             <div class="col-12 col-md-6">
-              <article class="p-4 bg-white rounded-4 shadow-sm h-100">
+              <article
+                id="women-only-tours-safe-fun-and-empowering"
+                class="p-4 bg-white rounded-4 shadow-sm h-100"
+              >
                 <h2 class="h5 mb-1">
-                  <a class="text-decoration-none" href="#"
+                  <a
+                    class="text-decoration-none"
+                    href="#women-only-tours-safe-fun-and-empowering"
                     >Women-Only Tours: Safe, Fun, and Empowering</a
                   >
                 </h2>
@@ -91,9 +196,14 @@
               </article>
             </div>
             <div class="col-12 col-md-6">
-              <article class="p-4 bg-white rounded-4 shadow-sm h-100">
+              <article
+                id="how-to-plan-a-custom-tour-with-toor-india"
+                class="p-4 bg-white rounded-4 shadow-sm h-100"
+              >
                 <h2 class="h5 mb-1">
-                  <a class="text-decoration-none" href="#"
+                  <a
+                    class="text-decoration-none"
+                    href="#how-to-plan-a-custom-tour-with-toor-india"
                     >How To Plan A Custom Tour With Toor India</a
                   >
                 </h2>
@@ -107,9 +217,14 @@
               </article>
             </div>
             <div class="col-12 col-md-6">
-              <article class="p-4 bg-white rounded-4 shadow-sm h-100">
+              <article
+                id="customer-stories-memorable-moments"
+                class="p-4 bg-white rounded-4 shadow-sm h-100"
+              >
                 <h2 class="h5 mb-1">
-                  <a class="text-decoration-none" href="#"
+                  <a
+                    class="text-decoration-none"
+                    href="#customer-stories-memorable-moments"
                     >Customer Stories: Memorable Moments From Recent Trips</a
                   >
                 </h2>
@@ -208,6 +323,30 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+      (function () {
+        const root = document.documentElement;
+        const btn = document.getElementById("themeToggle");
+        if (!btn) return;
+        const stored = localStorage.getItem("theme");
+        if (stored) root.setAttribute("data-theme", stored);
+        function applyLabel(theme) {
+          if (theme === "dark") {
+            btn.textContent = "☀️ Light";
+            btn.setAttribute("aria-label", "Switch to light mode");
+          } else {
+            btn.textContent = "🌙 Dark";
+            btn.setAttribute("aria-label", "Switch to dark mode");
+          }
+        }
+        applyLabel(root.getAttribute("data-theme"));
+        btn.addEventListener("click", () => {
+          const current = root.getAttribute("data-theme");
+          const next = current === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", next);
+          localStorage.setItem("theme", next);
+          applyLabel(next);
+        });
+      })();
     </script>
 
     <script
@@ -216,4 +355,55 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  <!-- Structured Data: Blog with BlogPosting entries -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Toor India Blog",
+      "url": "https://toorindia.com/blog/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Toor India",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://toorindia.com/assets/img/TOOR_INDIA_LOGO.png"
+        }
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Monsoon Travel: Top 5 Getaways Near Hyderabad",
+          "url": "https://toorindia.com/blog/#monsoon-travel-top-5-getaways-near-hyderabad",
+          "datePublished": "2025-11-29",
+          "description": "Discover misty hills, hidden waterfalls, and lush green trails this monsoon.",
+          "author": { "@type": "Organization", "name": "Toor India" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Women-Only Tours: Safe, Fun, and Empowering",
+          "url": "https://toorindia.com/blog/#women-only-tours-safe-fun-and-empowering",
+          "datePublished": "2025-11-29",
+          "description": "Why our curated women-only trips are perfect for solo travellers and groups.",
+          "author": { "@type": "Organization", "name": "Toor India" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "How To Plan A Custom Tour With Toor India",
+          "url": "https://toorindia.com/blog/#how-to-plan-a-custom-tour-with-toor-india",
+          "datePublished": "2025-10-31",
+          "description": "Step-by-step guide to planning your personalised itinerary with our tour managers.",
+          "author": { "@type": "Organization", "name": "Toor India" }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Customer Stories: Memorable Moments From Recent Trips",
+          "url": "https://toorindia.com/blog/#customer-stories-memorable-moments",
+          "datePublished": "2025-10-31",
+          "description": "A roundup of feedback and favourite moments from travellers across India.",
+          "author": { "@type": "Organization", "name": "Toor India" }
+        }
+      ]
+    }
+  </script>
 </html>

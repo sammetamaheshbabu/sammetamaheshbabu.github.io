@@ -4,68 +4,453 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Packages — Toor India</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta
+      name="description"
+      content="Browse Toor India's curated travel packages across India — pilgrimages, beaches, mountains, backwaters and more."
+    />
+    <meta name="author" content="Toor India" />
+    <link rel="canonical" href="https://toorindia.com/packages/" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:site_name" content="Toor India" />
+    <meta property="og:title" content="Packages — Toor India" />
+    <meta
+      property="og:description"
+      content="Explore our most-loved tour packages — Bhadrachalam, Bhavani Island, Chikkamagaluru, Goa, Kochi, Malarikkal, Manali and more."
+    />
+    <meta property="og:url" content="https://toorindia.com/packages/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://toorindia.com/assets/img/TOOR_INDIA_LOGO.png"
+    />
+    <meta property="og:image:alt" content="Toor India Logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Packages — Toor India" />
+    <meta
+      name="twitter:description"
+      content="Explore our most-loved tour packages — Bhadrachalam, Bhavani Island, Chikkamagaluru, Goa, Kochi, Malarikkal, Manali and more."
+    />
+    <meta
+      name="twitter:image"
+      content="https://toorindia.com/assets/img/TOOR_INDIA_LOGO.png"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="icon" href="../assets/img/favicon.ico" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <a href="#main" class="skip-link">Skip to content</a>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
       <div class="container navbar-container">
-        <a class="navbar-brand d-flex align-items-center" href="../index.html">
-          <img src="../assets/img/TOOR_INDIA_LOGO_1.png" alt="Toor India Logo" height="45" class="me-2" />
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <img
+            src="../assets/img/TOOR_INDIA_LOGO_1.png"
+            alt="Toor India Logo"
+            height="45"
+            class="me-2"
+          />
           <span class="fw-semibold">Toor India</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="nav">
           <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="../index.html#packages">Packages</a></li>
-            <li class="nav-item"><a class="nav-link" href="../about/index.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="../contact/index.html">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="/packages/">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#how-it-works">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/search/">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact/">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/">Blog</a>
+            </li>
           </ul>
           <div class="ms-lg-3 mt-3 mt-lg-0">
-            <button id="themeToggle" class="btn btn-sm btn-outline-secondary" type="button" aria-label="Toggle dark mode">🌙 Dark</button>
+            <button
+              id="themeToggle"
+              class="btn btn-sm btn-outline-secondary"
+              type="button"
+              aria-label="Toggle dark mode"
+            >
+              🌙 Dark
+            </button>
           </div>
         </div>
       </div>
     </nav>
-    <main class="py-5">
+    <main id="main" class="py-4">
       <div class="container">
-        <h1 class="h3 fw-bold mb-4">Packages</h1>
-        <p class="text-muted">Explore our curated packages. Coming soon: full list with filters and details.</p>
-        <a class="btn btn-primary" href="../index.html#packages">Back to Home</a>
+        <div class="text-center mb-4">
+          <h1 class="h3 fw-bold">Packages</h1>
+          <p class="text-muted mb-0">
+            Our curated Indian getaways — book via WhatsApp in a tap.
+          </p>
+        </div>
+
+        <div class="row g-4" id="pkg-list">
+          <!-- Cards populated from a static list -->
+        </div>
       </div>
     </main>
     <footer class="py-5 border-top bg-white">
       <div class="container">
         <div class="row g-4">
           <div class="col-12 col-md-4">
-            <img src="../assets/img/TOOR_INDIA_LOGO.png" alt="ToorIndia" height="36" class="mb-3" />
-            <p class="text-muted">Curated tours and personalised travel planning across India.</p>
+            <img
+              src="../assets/img/TOOR_INDIA_LOGO.png"
+              alt="ToorIndia"
+              height="36"
+              class="mb-3"
+            />
+            <p class="text-muted">
+              Curated tours and personalised travel planning across India.
+            </p>
           </div>
           <div class="col-6 col-md-4">
             <h6 class="fw-semibold">Company</h6>
             <ul class="list-unstyled small">
-              <li><a href="../about/index.html" class="text-decoration-none">About</a></li>
-              <li><a href="../careers/index.html" class="text-decoration-none">Careers</a></li>
-              <li><a href="../contact/index.html" class="text-decoration-none">Contact</a></li>
+              <li>
+                <a href="../about/index.html" class="text-decoration-none"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="../blog/index.html" class="text-decoration-none"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="../careers/index.html" class="text-decoration-none"
+                  >Careers</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-6 col-md-4">
             <h6 class="fw-semibold">Legal</h6>
             <ul class="list-unstyled small">
-              <li><a href="../privacy/index.html" class="text-decoration-none">Privacy Policy</a></li>
-              <li><a href="../terms/index.html" class="text-decoration-none">Terms of Service</a></li>
-              <li><a href="../refund/index.html" class="text-decoration-none">Refund & Returns</a></li>
+              <li>
+                <a href="../privacy/index.html" class="text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="../terms/index.html" class="text-decoration-none"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="../refund/index.html" class="text-decoration-none"
+                  >Refund & Returns</a
+                >
+              </li>
             </ul>
           </div>
         </div>
-        <div class="mt-4 small text-muted">© <span id="year"></span> Toor India. All rights reserved.</div>
+        <div class="mt-4 small text-muted">
+          © <span id="year"></span> Toor India. All rights reserved.
+        </div>
       </div>
     </footer>
     <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-      (function(){const root=document.documentElement;const btn=document.getElementById('themeToggle');const stored=localStorage.getItem('theme');if(stored){root.setAttribute('data-theme',stored);}function label(t){if(t==='dark'){btn.textContent='☀️ Light';btn.setAttribute('aria-label','Switch to light mode');}else{btn.textContent='🌙 Dark';btn.setAttribute('aria-label','Switch to dark mode');}}label(root.getAttribute('data-theme'));btn.addEventListener('click',()=>{const cur=root.getAttribute('data-theme');const next=cur==='dark'?'light':'dark';root.setAttribute('data-theme',next);localStorage.setItem('theme',next);label(next);});})();
+      document.getElementById("year").textContent = new Date().getFullYear();
+      (function () {
+        const root = document.documentElement;
+        const btn = document.getElementById("themeToggle");
+        const stored = localStorage.getItem("theme");
+        if (stored) root.setAttribute("data-theme", stored);
+        function label(t) {
+          if (t === "dark") {
+            btn.textContent = "☀️ Light";
+            btn.setAttribute("aria-label", "Switch to light mode");
+          } else {
+            btn.textContent = "🌙 Dark";
+            btn.setAttribute("aria-label", "Switch to dark mode");
+          }
+        }
+        label(root.getAttribute("data-theme"));
+        btn.addEventListener("click", () => {
+          const c = root.getAttribute("data-theme");
+          const n = c === "dark" ? "light" : "dark";
+          root.setAttribute("data-theme", n);
+          localStorage.setItem("theme", n);
+          label(n);
+        });
+      })();
+
+      const PACKAGES = [
+        {
+          title: "Bhadrachalam 3D/2N",
+          img: "../assets/img/packages_photos/bhadrachalam/Bhadrachalam_temple.png",
+          price: "From ₹11,999",
+          text: "Bhadrachalam Temple, Godavari River",
+          wa: "Hi, I'm interested in Bhadrachalam 3D/2N",
+          slug: "bhadrachalam-3d-2n",
+        },
+        {
+          title: "Bhavani Island 2D/1N",
+          img: "../assets/img/packages_photos/Bhavani island/vijayawada-bhavani-island-boat.jpeg",
+          price: "From ₹7,999",
+          text: "Bhavani Island, Krishna River",
+          wa: "Hi, I'm interested in Bhavani Island 2D/1N",
+          slug: "bhavani-island-2d-1n",
+        },
+        {
+          title: "Chikkamagaluru 3D/2N",
+          img: "../assets/img/packages_photos/Chikkamagaluru/Chikmagalur-1.jpg",
+          price: "From ₹12,999",
+          text: "Mullayanagiri, Coffee Estates",
+          wa: "Hi, I'm interested in Chikkamagaluru 3D/2N",
+          slug: "chikkamagaluru-3d-2n",
+        },
+        {
+          title: "Goa 3D/2N",
+          img: "../assets/img/packages_photos/Goa/goa.jpg",
+          price: "From ₹10,999",
+          text: "North & South Goa",
+          wa: "Hi, I'm interested in Goa 3D/2N",
+          slug: "goa-3d-2n",
+        },
+        {
+          title: "Kochi Kerala 4D/3N",
+          img: "../assets/img/packages_photos/Kochi Karala/kochi-water-metro.jpg",
+          price: "From ₹17,999",
+          text: "Kochi Fort, Alleppey Backwaters",
+          wa: "Hi, I'm interested in Kochi Kerala 4D/3N",
+          slug: "kochi-kerala-4d-3n",
+        },
+        {
+          title: "Maharashtra 4D/3N",
+          img: "../assets/img/packages_photos/Maharashtra/mahabaleshwar_1.png",
+          price: "From ₹14,999",
+          text: "Ajanta, Ellora, Raigad Fort",
+          wa: "Hi, I'm interested in Maharashtra 4D/3N",
+          slug: "maharashtra-4d-3n",
+        },
+        {
+          title: "Malarikkal 3D/2N",
+          img: "../assets/img/packages_photos/malarikkal/Malarikkal.avif",
+          price: "From ₹11,999",
+          text: "Malarikkal Lily Fields, Alleppey",
+          wa: "Hi, I'm interested in Malarikkal 3D/2N",
+          slug: "malarikkal-3d-2n",
+        },
+        {
+          title: "Manali 5D/4N",
+          img: "../assets/img/packages_photos/manali/1.jpg",
+          price: "From ₹18,999",
+          text: "Manali, Solang Valley",
+          wa: "Hi, I'm interested in Manali 5D/4N",
+          slug: "manali-5d-4n",
+        },
+      ];
+
+      const wrap = document.getElementById("pkg-list");
+      PACKAGES.forEach((p) => {
+        const enc = encodeURIComponent(p.wa);
+        const col = document.createElement("div");
+        col.className = "col-12 col-sm-6 col-lg-4";
+        col.innerHTML = `
+          <div class=\"card h-100 shadow-sm border-0\">
+            <a href=\"./${p.slug}/\" class=\"text-decoration-none\" aria-label=\"View ${p.title}\"> 
+              <img src=\"${p.img}\" class=\"card-img-top\" alt=\"${p.title}\" loading=\"lazy\" decoding=\"async\" />
+            </a>
+            <div class=\"card-body d-flex flex-column\">
+              <h2 class=\"h5 card-title mb-1\"><a href=\"./${p.slug}/\" class=\"stretched-link text-reset text-decoration-none\">${p.title}</a></h2>
+              <div class=\"text-muted small mb-2\">${p.text}</div>
+              <div class=\"mt-auto d-flex justify-content-between align-items-center\">
+                <span class=\"fw-semibold\">${p.price}</span>
+                <div class=\"d-flex gap-2\">
+                  <a class=\"btn btn-sm btn-outline-primary\" href=\"./${p.slug}/\">View Details</a>
+                  <a class=\"btn btn-sm btn-success\" target=\"_blank\" rel=\"noopener\" href=\"https://wa.me/919676003945?text=${enc}\">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>`;
+        wrap.appendChild(col);
+      });
+    </script>
+    <!-- Structured Data: ItemList for Packages -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Toor India Tour Packages",
+        "itemListOrder": "http://schema.org/ItemListOrderAscending",
+        "numberOfItems": 8,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Product",
+              "name": "Bhadrachalam 3D/2N",
+              "brand": { "@type": "Brand", "name": "Toor India" },
+              "image": "https://toorindia.com/assets/img/packages_photos/bhadrachalam/Bhadrachalam_temple.png",
+              "description": "Bhadrachalam Temple, Godavari River",
+              "url": "https://toorindia.com/packages/bhadrachalam-3d-2n/",
+              "offers": {
+                "@type": "Offer",
+                "price": "11999",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Product",
+              "name": "Bhavani Island 2D/1N",
+              "brand": { "@type": "Brand", "name": "Toor India" },
+              "image": "https://toorindia.com/assets/img/packages_photos/Bhavani%20island/vijayawada-bhavani-island-boat.jpeg",
+              "description": "Bhavani Island, Krishna River",
+              "url": "https://toorindia.com/packages/bhavani-island-2d-1n/",
+              "offers": {
+                "@type": "Offer",
+                "price": "7999",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Product",
+              "name": "Chikkamagaluru 3D/2N",
+              "brand": { "@type": "Brand", "name": "Toor India" },
+              "image": "https://toorindia.com/assets/img/packages_photos/Chikkamagaluru/Chikmagalur-1.jpg",
+              "description": "Mullayanagiri, Coffee Estates",
+              "url": "https://toorindia.com/packages/chikkamagaluru-3d-2n/",
+              "offers": {
+                "@type": "Offer",
+                "price": "12999",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Product",
+              "name": "Goa 3D/2N",
+              "brand": { "@type": "Brand", "name": "Toor India" },
+              "image": "https://toorindia.com/assets/img/packages_photos/Goa/goa.jpg",
+              "description": "North & South Goa",
+              "url": "https://toorindia.com/packages/goa-3d-2n/",
+              "offers": {
+                "@type": "Offer",
+                "price": "10999",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Product",
+              "name": "Kochi Kerala 4D/3N",
+              "brand": { "@type": "Brand", "name": "Toor India" },
+              "image": "https://toorindia.com/assets/img/packages_photos/Kochi%20Karala/kochi-water-metro.jpg",
+              "description": "Kochi Fort, Alleppey Backwaters",
+              "url": "https://toorindia.com/packages/kochi-kerala-4d-3n/",
+              "offers": {
+                "@type": "Offer",
+                "price": "17999",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "Product",
+              "name": "Maharashtra 4D/3N",
+              "brand": { "@type": "Brand", "name": "Toor India" },
+              "image": "https://toorindia.com/assets/img/packages_photos/Maharashtra/mahabaleshwar_1.png",
+              "description": "Ajanta, Ellora, Raigad Fort",
+              "url": "https://toorindia.com/packages/maharashtra-4d-3n/",
+              "offers": {
+                "@type": "Offer",
+                "price": "14999",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "Product",
+              "name": "Malarikkal 3D/2N",
+              "brand": { "@type": "Brand", "name": "Toor India" },
+              "image": "https://toorindia.com/assets/img/packages_photos/malarikkal/Malarikkal.avif",
+              "description": "Malarikkal Lily Fields, Alleppey",
+              "url": "https://toorindia.com/packages/malarikkal-3d-2n/",
+              "offers": {
+                "@type": "Offer",
+                "price": "11999",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "Product",
+              "name": "Manali 5D/4N",
+              "brand": { "@type": "Brand", "name": "Toor India" },
+              "image": "https://toorindia.com/assets/img/packages_photos/manali/1.jpg",
+              "description": "Manali, Solang Valley",
+              "url": "https://toorindia.com/packages/manali-5d-4n/",
+              "offers": {
+                "@type": "Offer",
+                "price": "18999",
+                "priceCurrency": "INR",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          }
+        ]
+      }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
